@@ -8,6 +8,7 @@ m = length(y); % number of training examples
 J_history = zeros(num_iters, 1);
 derv=[0; 0];
 
+
 for iter = 1:num_iters
 
     % ====================== YOUR CODE HERE ======================
@@ -19,6 +20,7 @@ for iter = 1:num_iters
     %
     % J_history(iter,1)=computeCost(Xy,theta)
     derv=(((X*theta) -y)'*X)';
+    
     theta=theta-(alpha/m)*derv;
 
 
