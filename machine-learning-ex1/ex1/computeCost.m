@@ -13,7 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-subtracted=(X*theta)-y;
+
+
+subtracted=(X*theta)-y; 
 J=sum(subtracted.^2)/(2*m);
  
 
